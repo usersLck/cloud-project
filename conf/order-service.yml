@@ -14,7 +14,9 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 5000
+            timeoutInMilliseconds: 15000
+ribbon:
+  ReadTimeout: 60000
 #mybatis
 mybatis:
   type-aliases-package: com.lanou.model
